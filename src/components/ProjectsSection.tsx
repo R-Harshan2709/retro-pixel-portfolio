@@ -3,34 +3,24 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "DevBoard",
-    description: "A kanban-style project management tool built for developer teams with real-time sync.",
-    tags: ["React", "Firebase", "Tailwind"],
+    title: "Online Voting System",
+    description: "A secure and reliable online voting platform built in Java, enabling authenticated users to cast votes digitally with real-time result tallying and admin controls.",
+    tags: ["Java", "JDBC", "MySQL", "Swing"],
   },
   {
-    title: "CryptoTracker",
-    description: "Real-time cryptocurrency dashboard with portfolio tracking and price alerts.",
-    tags: ["Next.js", "WebSocket", "Chart.js"],
+    title: "Interactive Quiz Platform",
+    description: "An engaging web-based quiz platform with timed questions, score tracking, leaderboards, and support for multiple quiz categories.",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
-    title: "CodeSnippets",
-    description: "A beautiful code snippet manager with syntax highlighting and team sharing.",
-    tags: ["TypeScript", "Electron", "SQLite"],
+    title: "Smart Hospital & Alert System",
+    description: "An intelligent hospital management system with real-time patient monitoring, automated alert notifications, and streamlined doctor-patient communication.",
+    tags: ["Java", "IoT", "Firebase", "Android"],
   },
   {
-    title: "FitLog",
-    description: "Mobile-first fitness tracking app with workout history and progress analytics.",
-    tags: ["React Native", "Node.js", "MongoDB"],
-  },
-  {
-    title: "BlogEngine",
-    description: "A headless CMS with markdown support, SEO optimization, and static site generation.",
-    tags: ["Next.js", "MDX", "Vercel"],
-  },
-  {
-    title: "ChatBridge",
-    description: "End-to-end encrypted messaging platform with file sharing and video calls.",
-    tags: ["React", "WebRTC", "Redis"],
+    title: "QR Based Tampering Detection (IoT)",
+    description: "An IoT-powered system that uses QR codes to detect product tampering, ensuring authenticity and security throughout the supply chain.",
+    tags: ["IoT", "Arduino", "Python", "QR Code"],
   },
 ];
 

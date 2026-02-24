@@ -21,13 +21,13 @@ const HeroSection = () => {
               Available for hire
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold leading-[0.95] mb-6">
-              Full Stack
+              Hi, I'm <span className="text-primary">Harshan</span>
               <br />
-              <span className="text-primary">Developer</span>
-              <span className="text-secondary">.</span>
+              <span className="text-secondary">Full Stack Developer</span>
+              <span className="text-primary">.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-md mb-8 font-body leading-relaxed">
-              Building pixel-perfect interfaces & robust backends.
+              Building innovative solutions from IoT to web platforms.
               I turn complex ideas into clean, performant applications.
             </p>
             <div className="flex flex-wrap gap-4">

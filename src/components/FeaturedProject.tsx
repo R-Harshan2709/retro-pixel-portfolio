@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const techStack = ["React", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS"];
+const techStack = ["Java", "IoT", "Firebase", "Android", "Real-time Alerts"];
 
 const FeaturedProject = () => {
   return (
@@ -41,12 +41,12 @@ const FeaturedProject = () => {
             {/* Details */}
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h3 className="text-3xl lg:text-4xl font-heading font-bold mb-4">
-                CloudSync Platform
+                Smart Hospital & Alert System
               </h3>
               <p className="text-muted-foreground font-body leading-relaxed mb-6">
-                A real-time collaborative platform that synchronizes data across
-                distributed teams. Built with a microservices architecture handling
-                100k+ concurrent connections with sub-50ms latency.
+                An intelligent hospital management and alert system that monitors
+                patients in real-time, sends automated alerts to doctors and staff,
+                and streamlines hospital operations for better patient care.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-8">

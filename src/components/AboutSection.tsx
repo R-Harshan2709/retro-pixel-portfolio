@@ -29,22 +29,20 @@ const AboutSection = () => {
             className="lg:col-span-3"
           >
             <h2 className="text-3xl lg:text-4xl font-heading font-bold mb-6">
-              I bridge the gap between
-              <span className="text-primary"> rock-solid backends</span> &
-              <span className="text-secondary"> beautiful frontends</span>.
+              I'm <span className="text-primary">Harshan</span>, I build
+              <span className="text-secondary"> innovative solutions</span> from web to IoT.
             </h2>
             <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
               <p>
-                With over 5 years of professional experience, I specialize in crafting
-                full-stack applications that are not only visually stunning but also
-                architecturally sound. From database design to pixel-perfect UI components,
-                I own the entire stack.
+                I'm a passionate full-stack developer with experience building end-to-end
+                applications spanning web platforms, IoT systems, and enterprise solutions.
+                From designing secure voting systems to smart hospital alerts, I love
+                solving real-world problems with technology.
               </p>
               <p>
-                I'm passionate about clean code, performance optimization, and creating
-                developer experiences that make teams more productive. When I'm not coding,
-                you'll find me exploring retro computing, contributing to open source, or
-                writing about software architecture.
+                My expertise includes Java, web technologies, IoT integration, and building
+                interactive platforms. I'm driven by clean code, user-centric design, and
+                delivering impactful projects that make a difference.
               </p>
             </div>
           </motion.div>
