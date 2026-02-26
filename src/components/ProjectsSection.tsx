@@ -16,6 +16,7 @@ const projects = [
     title: "Smart Hospital & Alert System",
     description: "An intelligent hospital management system with real-time patient monitoring, automated alert notifications, and streamlined doctor-patient communication.",
     tags: ["Java", "IoT", "Firebase", "Android"],
+    image: "/images/smartambulanceimage.png",
   },
   {
     title: "QR Based Tampering Detection (IoT)",
@@ -51,9 +52,13 @@ const ProjectsSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               className="retro-card p-0 overflow-hidden group"
             >
-              {/* Image placeholder */}
-              <div className="h-40 bg-muted border-b-2 border-foreground flex items-center justify-center">
-                <span className="text-4xl">📁</span>
+              {/* Project image */}
+              <div className="h-40 bg-muted border-b-2 border-foreground flex items-center justify-center overflow-hidden">
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+                ) : (
+                  <span className="text-4xl">📁</span>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-heading font-bold mb-2">{project.title}</h3>
@@ -71,7 +76,7 @@ const ProjectsSection = () => {
                   <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
                     <ExternalLink size={18} />
                   </a>
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href={project.title === "Smart Hospital & Alert System" ? "https://github.com/R-Harshan2709/Smart-Ambulance-and-Hospital-Alert-System" : "#"} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Github size={18} />
                   </a>
                 </div>

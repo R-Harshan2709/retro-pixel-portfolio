@@ -62,9 +62,11 @@ const FeaturedProject = () => {
                   <ExternalLink size={16} className="mr-1" />
                   View Live
                 </Button>
-                <Button variant="outline" size="default">
-                  <Github size={16} className="mr-1" />
-                  GitHub
+                <Button variant="outline" size="default" asChild>
+                  <a href="https://github.com/R-Harshan2709/Smart-Ambulance-and-Hospital-Alert-System" target="_blank" rel="noopener noreferrer">
+                    <Github size={16} className="mr-1" />
+                    GitHub
+                  </a>
                 </Button>
               </div>
             </div>
