@@ -2,33 +2,13 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    role: "Senior Full Stack Developer",
-    company: "TechCorp Inc.",
-    dates: "2022 — Present",
+    role: "Intern",
+    company: "Adventsys Technologies Pvt. Ltd",
+    dates: "Present",
     achievements: [
-      "Led migration of monolithic app to microservices, reducing deploy time by 80%",
-      "Architected real-time notification system handling 500k+ daily events",
-      "Mentored team of 4 junior developers on best practices",
-    ],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "StartupXYZ",
-    dates: "2020 — 2022",
-    achievements: [
-      "Built customer-facing dashboard from scratch, increasing user engagement by 40%",
-      "Implemented CI/CD pipeline reducing release cycles from weeks to hours",
-      "Designed and deployed RESTful APIs serving 1M+ requests/day",
-    ],
-  },
-  {
-    role: "Frontend Developer",
-    company: "DesignStudio",
-    dates: "2019 — 2020",
-    achievements: [
-      "Developed responsive web apps for 15+ clients across various industries",
-      "Introduced component-driven architecture using React and Storybook",
-      "Achieved 95+ Lighthouse performance scores on all projects",
+      "Gained hands-on experience working on real-world projects",
+      "Collaborated with the development team on building and testing solutions",
+      "Strengthened skills in full-stack development and IoT integration",
     ],
   },
 ];

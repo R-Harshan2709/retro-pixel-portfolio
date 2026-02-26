@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "5+", label: "Years Experience" },
-  { value: "50+", label: "Projects Delivered" },
-  { value: "20+", label: "Happy Clients" },
+  { value: "4+", label: "Projects Built" },
+  { value: "BE", label: "Pursuing Engineering" },
 ];
 
 const AboutSection = () => {
@@ -34,8 +33,8 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with experience building end-to-end
-                applications spanning web platforms, IoT systems, and enterprise solutions.
+                I'm a passionate BE student with hands-on experience building end-to-end
+                applications spanning web platforms, IoT systems, and academic projects.
                 From designing secure voting systems to smart hospital alerts, I love
                 solving real-world problems with technology.
               </p>
