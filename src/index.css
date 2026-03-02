@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -83,6 +83,39 @@
     --sidebar-border: 220 10% 30%;
     --sidebar-ring: 20 80% 52%;
   }
+
+  /* ===================== SPIDER-MAN THEME ===================== */
+  .spiderman {
+    --background: 0 72% 8%;
+    --foreground: 0 0% 97%;
+
+    --card: 0 60% 12%;
+    --card-foreground: 0 0% 97%;
+
+    --popover: 0 72% 8%;
+    --popover-foreground: 0 0% 97%;
+
+    --primary: 0 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 90% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 50% 16%;
+    --muted-foreground: 0 10% 65%;
+
+    --accent: 220 90% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 80% 50%;
+    --input: 0 80% 50%;
+    --ring: 0 90% 55%;
+
+    --radius: 0.25rem;
+  }
 }
 
 @layer base {
@@ -94,7 +127,12 @@
     @apply bg-background text-foreground font-body antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
   }
 }
@@ -144,4 +182,268 @@
   .glow-screen {
     box-shadow: 0 0 30px 10px hsl(var(--primary) / 0.3), 0 0 60px 20px hsl(var(--secondary) / 0.15);
   }
+}
+
+/* ============================================================
+   SPIDER-MAN THEME — FULL COMIC-BOOK EDITION
+   ============================================================ */
+
+/* ---------- Fonts ---------- */
+.spiderman,
+.spiderman h1,
+.spiderman h2,
+.spiderman h3,
+.spiderman h4,
+.spiderman h5,
+.spiderman h6 {
+  font-family: 'Bangers', 'Comic Neue', cursive !important;
+  letter-spacing: 0.05em;
+}
+
+.spiderman p,
+.spiderman span,
+.spiderman a,
+.spiderman li,
+.spiderman input,
+.spiderman textarea,
+.spiderman button {
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive !important;
+}
+
+/* ---------- Background with real spider web SVG ---------- */
+.spiderman {
+  background-color: #0a0008;
+  background-image:
+    /* Spider web top-left corner */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg stroke='rgba(200,20,20,0.25)' stroke-width='1' fill='none'%3E%3Cline x1='0' y1='0' x2='300' y2='0'/%3E%3Cline x1='0' y1='0' x2='0' y2='300'/%3E%3Cline x1='0' y1='0' x2='300' y2='300'/%3E%3Cline x1='0' y1='0' x2='150' y2='300'/%3E%3Cline x1='0' y1='0' x2='300' y2='150'/%3E%3Cellipse cx='0' cy='0' rx='60' ry='60'/%3E%3Cellipse cx='0' cy='0' rx='110' ry='110'/%3E%3Cellipse cx='0' cy='0' rx='165' ry='165'/%3E%3Cellipse cx='0' cy='0' rx='230' ry='230'/%3E%3Cellipse cx='0' cy='0' rx='295' ry='295'/%3E%3C/g%3E%3C/svg%3E"),
+    /* Fine diagonal web lines tiling */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg stroke='rgba(180,0,0,0.08)' stroke-width='0.6' fill='none'%3E%3Cline x1='0' y1='0' x2='80' y2='80'/%3E%3Cline x1='80' y1='0' x2='0' y2='80'/%3E%3Cline x1='40' y1='0' x2='40' y2='80'/%3E%3Cline x1='0' y1='40' x2='80' y2='40'/%3E%3Ccircle cx='40' cy='40' r='20' /%3E%3Ccircle cx='40' cy='40' r='35' /%3E%3C/g%3E%3C/svg%3E"),
+    /* Deep gradient */
+    radial-gradient(ellipse at 20% 20%, #1a0010 0%, #060014 50%, #0a0008 100%);
+  background-size: 300px 300px, 80px 80px, cover;
+  background-position: top left, center, center;
+  background-attachment: fixed;
+}
+
+/* ---------- Navbar ---------- */
+.spiderman nav {
+  background: rgba(10, 0, 8, 0.92) !important;
+  border-bottom: 2px solid #cc0000 !important;
+  box-shadow: 0 2px 20px rgba(220, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.spiderman nav a {
+  font-family: 'Bangers', cursive !important;
+  letter-spacing: 0.1em;
+  color: #ff6666 !important;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.spiderman nav a:hover {
+  color: #ff0000 !important;
+  text-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
+}
+
+/* ---------- Cards — Comic Panels (no retro pixel shadow) ---------- */
+.spiderman .retro-card {
+  border: 2px solid #cc0000 !important;
+  border-radius: 4px !important;
+  box-shadow:
+    0 0 0 1px #330000,
+    0 8px 32px rgba(200, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 80, 80, 0.15) !important;
+  background: linear-gradient(145deg, #12000a 0%, #0d000d 100%) !important;
+  transform: none !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Comic panel corner accent */
+.spiderman .retro-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 28px 28px 0;
+  border-color: transparent #cc0000 transparent transparent;
+  z-index: 2;
+}
+
+/* Subtle web watermark on each card */
+.spiderman .retro-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='rgba(200,0,0,0.18)' stroke-width='1' fill='none'%3E%3Cline x1='50' y1='0' x2='50' y2='100'/%3E%3Cline x1='0' y1='50' x2='100' y2='50'/%3E%3Cline x1='0' y1='0' x2='100' y2='100'/%3E%3Cline x1='100' y1='0' x2='0' y2='100'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Ccircle cx='50' cy='50' r='38'/%3E%3Ccircle cx='50' cy='50' r='48'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spiderman .retro-card:hover {
+  transform: translateY(-4px) scale(1.01) !important;
+  box-shadow:
+    0 0 0 1px #550000,
+    0 16px 48px rgba(220, 0, 0, 0.55),
+    0 0 20px rgba(220, 0, 0, 0.3) !important;
+}
+
+/* ---------- Remove all retro pixel offsets ---------- */
+.spiderman .retro-shadow,
+.spiderman .retro-shadow-sm,
+.spiderman .retro-shadow-primary,
+.spiderman .retro-shadow-hover {
+  box-shadow: 0 4px 16px rgba(200, 0, 0, 0.3) !important;
+  transform: none !important;
+}
+
+.spiderman .retro-border {
+  border-color: #cc0000 !important;
+  border-width: 2px !important;
+}
+
+/* ---------- Tags — Comic book speech-bubble look ---------- */
+.spiderman .retro-tag {
+  background: #1a0000 !important;
+  border: 1.5px solid #ff2222 !important;
+  border-radius: 2px !important;
+  color: #ff6666 !important;
+  font-family: 'Bangers', cursive !important;
+  letter-spacing: 0.12em;
+  box-shadow: 0 2px 8px rgba(220, 0, 0, 0.3) !important;
+}
+
+/* ---------- Sections ---------- */
+.spiderman section {
+  position: relative;
+}
+
+/* ---------- Inputs ---------- */
+.spiderman .retro-input {
+  border: 1.5px solid #cc0000 !important;
+  border-radius: 4px !important;
+  background: #0d0006 !important;
+  box-shadow: 0 0 8px rgba(200, 0, 0, 0.2) inset !important;
+}
+
+.spiderman .retro-input:focus {
+  box-shadow: 0 0 0 2px rgba(220, 0, 0, 0.5), 0 0 16px rgba(220, 0, 0, 0.3) !important;
+}
+
+/* ---------- Glow screen ---------- */
+.spiderman .glow-screen {
+  box-shadow:
+    0 0 40px 15px rgba(220, 0, 0, 0.5),
+    0 0 80px 30px rgba(30, 0, 180, 0.2) !important;
+}
+
+/* ---------- Web-swing entrance animation ---------- */
+@keyframes web-swing-in {
+  0% {
+    transform: translateX(-60px) rotate(-8deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateX(8px) rotate(1deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(-4px) rotate(-0.5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.spiderman section>div>div:not(.skills-track) {
+  animation: web-swing-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Ensure skills ticker always plays in Spider-Man mode */
+.spiderman .skills-track {
+  animation: ticker 25s linear infinite !important;
+  transform: none;
+  opacity: 1;
+}
+
+.spiderman .skills-track:hover {
+  animation-play-state: paused !important;
+}
+
+/* ---------- Comic halftone dot overlay on bg ---------- */
+.spiderman::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(180, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---------- Spider web corner decorations (fixed on page) ---------- */
+.spiderman::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 220px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg stroke='rgba(210,10,10,0.35)' stroke-width='1.2' fill='none'%3E%3Cline x1='220' y1='0' x2='0' y2='220'/%3E%3Cline x1='220' y1='0' x2='220' y2='220'/%3E%3Cline x1='220' y1='0' x2='110' y2='220'/%3E%3Cline x1='220' y1='0' x2='0' y2='110'/%3E%3Cline x1='220' y1='0' x2='55' y2='220'/%3E%3Cline x1='220' y1='0' x2='165' y2='220'/%3E%3Cellipse cx='220' cy='0' rx='55' ry='55'/%3E%3Cellipse cx='220' cy='0' rx='100' ry='100'/%3E%3Cellipse cx='220' cy='0' rx='150' ry='150'/%3E%3Cellipse cx='220' cy='0' rx='200' ry='200'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.9;
+}
+
+/* ---------- Toggle button pulse ---------- */
+@keyframes spidey-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(220, 20, 20, 0.7);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(220, 20, 20, 0);
+  }
+}
+
+.spidey-btn {
+  animation: spidey-pulse 1.8s ease-in-out infinite;
+}
+
+/* ---------- Buttons ---------- */
+.spiderman button,
+.spiderman [role="button"] {
+  font-family: 'Bangers', cursive !important;
+  letter-spacing: 0.1em;
+  border-radius: 3px !important;
+}
+
+/* ---------- Custom Spider Web Cursor ---------- */
+.spiderman,
+.spiderman * {
+  cursor: url('/spider-cursor.svg') 16 16, crosshair !important;
+}
+
+.spiderman a,
+.spiderman button,
+.spiderman [role="button"],
+.spiderman input,
+.spiderman textarea,
+.spiderman select,
+.spiderman label {
+  cursor: url('/spider-cursor.svg') 16 16, pointer !important;
 }

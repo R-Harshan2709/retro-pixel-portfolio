@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const techStack = ["Java", "IoT", "Firebase", "Android", "Real-time Alerts"];
@@ -28,14 +28,13 @@ const FeaturedProject = () => {
           className="retro-card p-0 overflow-hidden"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            {/* Image placeholder */}
-            <div className="bg-muted h-64 lg:h-auto flex items-center justify-center border-b-2 lg:border-b-0 lg:border-r-2 border-foreground">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">🖥️</div>
-                <p className="font-heading text-sm uppercase tracking-wider text-muted-foreground">
-                  Project Screenshot
-                </p>
-              </div>
+            {/* Project Screenshot */}
+            <div className="bg-muted h-64 lg:h-auto flex items-center justify-center border-b-2 lg:border-b-0 lg:border-r-2 border-foreground overflow-hidden">
+              <img
+                src="/images/smartambulanceimage.png"
+                alt="Smart Hospital & Alert System Screenshot"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Details */}
@@ -58,10 +57,6 @@ const FeaturedProject = () => {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Button variant="hero" size="default">
-                  <ExternalLink size={16} className="mr-1" />
-                  View Live
-                </Button>
                 <Button variant="outline" size="default" asChild>
                   <a href="https://github.com/R-Harshan2709/Smart-Ambulance-and-Hospital-Alert-System" target="_blank" rel="noopener noreferrer">
                     <Github size={16} className="mr-1" />

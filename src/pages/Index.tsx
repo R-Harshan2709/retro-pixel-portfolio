@@ -7,10 +7,14 @@ import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import SpiderWebCanvas from "@/components/SpiderWebCanvas";
+import SpiderWebBackground from "@/components/SpiderWebBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SpiderWebBackground />
+      <SpiderWebCanvas />
       <Navbar />
       <main>
         <HeroSection />

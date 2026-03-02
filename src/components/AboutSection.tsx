@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "4+", label: "Projects Built" },
-  { value: "BE", label: "Pursuing Engineering" },
+  { value: "B.E(CSE)", label: "Pursuing Engineering" },
 ];
 
 const AboutSection = () => {

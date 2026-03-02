@@ -1,27 +1,34 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "Online Voting System",
     description: "A secure and reliable online voting platform built in Java, enabling authenticated users to cast votes digitally with real-time result tallying and admin controls.",
     tags: ["Java", "JDBC", "MySQL", "Swing"],
+    image: "/images/online-voting-system.png",
+    github: "https://github.com/R-Harshan2709/Online-Voting-System",
   },
   {
     title: "Interactive Quiz Platform",
     description: "An engaging web-based quiz platform with timed questions, score tracking, leaderboards, and support for multiple quiz categories.",
     tags: ["HTML", "CSS", "JavaScript", "React"],
+    image: "/images/interactive-quiz-platform.png",
+    github: "https://github.com/R-Harshan2709/Interactive-Quiz-Platform",
   },
   {
     title: "Smart Hospital & Alert System",
     description: "An intelligent hospital management system with real-time patient monitoring, automated alert notifications, and streamlined doctor-patient communication.",
     tags: ["Java", "IoT", "Firebase", "Android"],
     image: "/images/smartambulanceimage.png",
+    github: "https://github.com/R-Harshan2709/Smart-Ambulance-and-Hospital-Alert-System",
   },
   {
-    title: "QR Based Tampering Detection (IoT)",
-    description: "An IoT-powered system that uses QR codes to detect product tampering, ensuring authenticity and security throughout the supply chain.",
-    tags: ["IoT", "Arduino", "Python", "QR Code"],
+    title: "Car Rental System",
+    description: "A full-featured car rental management system with vehicle listings, booking workflows, customer management, and admin controls.",
+    tags: ["Java", "MySQL", "JDBC", "Swing"],
+    image: "/images/car-rental-system.png",
+    github: "https://github.com/R-Harshan2709/Car_Rental_System",
   },
 ];
 
@@ -73,10 +80,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                    <ExternalLink size={18} />
-                  </a>
-                  <a href={project.title === "Smart Hospital & Alert System" ? "https://github.com/R-Harshan2709/Smart-Ambulance-and-Hospital-Alert-System" : "#"} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Github size={18} />
                   </a>
                 </div>

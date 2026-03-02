@@ -1,12 +1,20 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Send } from "lucide-react";
+import { Github, Linkedin, Send } from "lucide-react";
+
+const InstagramIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+  </svg>
+);
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "X / Twitter", href: "#" },
+  { icon: Github, label: "GitHub", href: "https://github.com/R-Harshan2709" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/harshanr2005/" },
+  { icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/_harshanraj_008_/" },
 ];
 
 const ContactSection = () => {
@@ -95,6 +103,8 @@ const ContactSection = () => {
                 key={s.label}
                 href={s.href}
                 aria-label={s.label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 border-2 border-foreground bg-background text-foreground hover:bg-primary hover:text-primary-foreground transition-colors retro-shadow-sm hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none"
               >
                 <Icon size={20} />
